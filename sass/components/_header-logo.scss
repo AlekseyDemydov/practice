@@ -1,0 +1,27 @@
+.header-logo {
+    margin-right: 93px;
+@media screen and(max-width:1200px){
+    margin-right: 88px;
+}
+    
+
+    &__web{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $button-color;
+    }
+
+    &__studio{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $text-color;
+    }
+}

@@ -1,0 +1,56 @@
+.client-section {
+    justify-content: center;
+    padding: 94px 0;
+
+    h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $text-color;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+}
+
+.client-card {
+    display: flex;
+    justify-content: center;
+
+    li {
+            display: flex;
+            justify-content: center;
+            margin-right: 30px;
+        }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    &__icon-size {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #AFB1B8;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: border-color 250ms linear, fill 250ms linear;
+
+        &:hover,
+        &:focus {
+            border-color: $button-color;
+            fill: $button-color;
+        }
+    }
+
+    &__icon {
+        width: 106px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,83 @@
+.benefits-section {
+    padding: 94px 0 94px 0;
+
+    ul {
+        @media screen and(min-width:768px){
+            display: flex;
+        }
+        
+        justify-content: center;
+
+    }
+
+    li {
+        margin: 0 15px;
+        @media screen and (max-width:768px) {
+                margin: 0;
+            }
+    }
+
+    &__antenna,
+    &__clock,
+    &__diagram,
+    &__astronaut {
+        height: 120px;
+        width: 270px;
+        background: $btn-color2;
+        border-radius: 4px;
+        align-items: center;
+        margin-bottom: 30px;
+        @media screen and (max-width:768px){
+            width: 450px;
+                height: 120px;
+        }
+    }
+
+    &__antenna:nth-child(1) {
+        background-image: url(../images/main/icon/antenna.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__clock:nth-child(1) {
+        background-image: url(../images/main/icon/clock.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__diagram:nth-child(1) {
+        background-image: url(../images/main/icon/diagram.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__astronaut:nth-child(1) {
+        background-image: url(../images/main/icon/astronaut.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__name {
+        margin: 0 0 10px 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $text-color;
+        @media screen and (max-width:768px) {
+                text-align: center;
+            }
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $second-text;
+        @media screen and (max-width:768px) {
+                margin-bottom: 30px;
+            }
+    }
+}

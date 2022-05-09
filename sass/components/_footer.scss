@@ -1,0 +1,188 @@
+footer {
+    height: 252px;
+    background-color: $brand-color;
+    padding: 60px 0 60px 0;
+
+    .container {
+        display: flex;
+    }
+}
+
+.footer-box1 {
+    margin-right: 70px;
+    width: 231px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+
+    &__web {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $button-color;
+    }
+
+    &__studio {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $background-color;
+    }
+}
+
+.footer-address{
+    li {
+        margin-bottom: 9px;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+
+    &__map {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $background-color;
+        transition: color 250ms linear;
+
+        &:hover, &:focus{
+            color: $button-color;
+            fill: $button-color;
+        }
+    }
+
+    &__mail,
+    &__tel {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 250ms linear;
+
+        &:hover, &:focus{
+            color: $button-color;
+            fill: $button-color;
+        }
+    }
+}
+
+.footer-box2 {
+    margin-right: 93px;
+
+    h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $background-color;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+
+    li {
+        margin-right: 10px;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    &__size-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms linear;
+
+        &:hover, &:focus{
+            background-color: $button-color;
+        }
+    }
+
+    &__icon {
+        height: 20px;
+        width: 20px;
+        fill: $background-color;
+    }
+
+}
+
+.footer-box3 {
+    display: inline-block;
+
+    h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    label{
+        display: inline-flex;
+    }
+}
+
+.send-input-size {
+    width: 358px;
+    height: 50px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    color: $background-color;
+    padding-left: 16px;
+}
+
+.button-send {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    background: $button-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $background-color;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: $background-color;
+        margin-left: 10px;
+    }
+}

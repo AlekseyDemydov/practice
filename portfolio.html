@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goit-markup</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+        <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="./index.html" class="header-logo"><span class="header-logo__web">Web</span><span
+                    class="header-logo__studio">Studio</span></a>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="backdrop-menu" data-menu-button>
+                <svg width="40" height="40">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+                    <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+            <div class="backdrop-menu is-hidden" id="backdrop-menu" data-menu>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="./index.html" class="header-nav__studio ">Студия</a></li>
+                        <li><a href="./portfolio.html" class="header-nav__portfolio header-nav--active">Портфолио</a></li>
+                        <li><a href="" class="header-nav__contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-info">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="header-info__mail">
+                            <svg width="16" height="12" class="header-info__icon-envelope">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="+380961111111" class="header-info__tel">
+                            <svg width="10" height="16" class="header-info__icon-smartphone">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header-link">
+                    <li> <a href=""></a>Instagram</li>
+                    <li><a href=""></a>Twitter</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="portfolio-section">
+            <div class="container">
+                <ul class="portfolio-section__button">
+                    <li><button type="button" class="portfolio-section__bt-text">Все</button></li>
+                    <li><button type="button" class="portfolio-section__bt-text">Веб-сайты</button></li>
+                    <li><button type="button" class="portfolio-section__bt-text">Приложения</button></li>
+                    <li><button type="button" class="portfolio-section__bt-text">Дизайн</button></li>
+                    <li><button type="button" class="portfolio-section__bt-text">Маркетинг</button></li>
+                </ul>
+                <div class="portfolio-section__cards">
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 1.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                                        компании или частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Технокряк</h2>
+                                <p class="action-name__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 2.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Постер New Orlean vs Golden Star</h2>
+                                <p class="action-name__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 3.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Ресторан Seafood</h2>
+                                <p class="action-name__text">Приложение</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 4.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Проект Prime</h2>
+                                <p class="action-name__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 5.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Проект Boxes</h2>
+                                <p class="action-name__text">Приложение</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 6.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Inspiration has no Borders</h2>
+                                <p class="action-name__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 7.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Издание Limited Edition</h2>
+                                <p class="action-name__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 8.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Проект LAB</h2>
+                                <p class="action-name__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product">
+                        <a href="">
+                            <div class="product-thumb">
+                                <img src="./images/portfolio/img 9.jpg" alt="Технокряк">
+                                <div class="product-overlay">
+                                    <div class="product-actions">Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном лице.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-name">
+                                <h2 class="action-name__label">Growing Business</h2>
+                                <p class="action-name__text">Приложение</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-box1">
+                <div class="footer-logo">
+                    <a href="./index.html"><span class="footer-logo__web">Web</span><span
+                            class="footer-logo__studio">Studio</span></a>
+                </div>
+                <address>
+                    <ul class="footer-address">
+                        <li>
+                            <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
+                                class="footer-address__map" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси
+                                Украинки, 26</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="footer-address__mail">info@example.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="footer-address__tel">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-box2">
+                <h3>присоединяйтесь</h3>
+                <ul class="footer-link">
+                    <li>
+                        <a class="footer-link__size-icon" href="">
+                            <svg class="footer-link__icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link__size-icon" href="">
+                            <svg class="footer-link__icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link__size-icon" href="">
+                            <svg class="footer-link__icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link__size-icon" href="">
+                            <svg class="footer-link__icon">
+                                <use href="./images/icons.svg#icon-in"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box3">
+                <h3>Подпишитесь на рассылку</h3>
+                <label>
+                    <input class="send-input-size" type="email" name="mail" placeholder="E-mail">
+                    <button class="button-send" type="submit">
+                        Подписаться
+                        <svg class="button-send__icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </label>
+    
+    
+            </div>
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    </body>
+    
+    </html>
