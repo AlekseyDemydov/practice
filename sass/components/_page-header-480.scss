@@ -21,7 +21,7 @@ header {
     .backdrop-menu{
         display: flex;
         
-        pointer-events: none;
+        
         transition: opacity 250ms linear;
         width: 100%;
         opacity: 1;
@@ -36,7 +36,7 @@ header {
         }
         @media screen and (max-width:768px) {
             
-            
+            pointer-events: none;
             flex-direction: column;
             padding-top: 42px;
             padding-left: 40px;

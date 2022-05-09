@@ -137,7 +137,6 @@ header .container {
 
 header .backdrop-menu {
   display: flex;
-  pointer-events: none;
   transition: opacity 250ms linear;
   width: 100%;
   opacity: 1;
@@ -154,6 +153,7 @@ header .backdrop-menu {
 
 @media screen and (max-width: 768px) {
   header .backdrop-menu {
+    pointer-events: none;
     flex-direction: column;
     padding-top: 42px;
     padding-left: 40px;
@@ -390,9 +390,15 @@ header .backdrop-menu.is-open {
   background-position: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .box-section {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header480.jpg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .box-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header-768.jpg);
   }
 }
 
