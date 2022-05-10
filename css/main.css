@@ -1173,7 +1173,25 @@ footer {
 }
 
 footer .container {
-  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  footer .container div {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  footer .container {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1183,12 +1201,17 @@ footer .container {
   }
 }
 
-.footer-box1 {
-  margin-right: 70px;
-  width: 231px;
+@media screen and (min-width: 1200px) {
+  footer .container {
+    display: inline-flex;
+  }
 }
 
-@media screen and (max-width: 768px) {
+.footer-box1 {
+  margin-right: 70px;
+}
+
+@media screen and (max-width: 1200px) {
   .footer-box1 {
     margin-right: 0;
     margin-bottom: 60px;
@@ -1199,7 +1222,7 @@ footer .container {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer-logo {
     display: flex;
     justify-content: center;
@@ -1226,7 +1249,7 @@ footer .container {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer-address {
     text-align: center;
   }
@@ -1274,7 +1297,7 @@ footer .container {
   margin-right: 93px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer-box2 {
     margin-right: 0;
     margin-bottom: 60px;
@@ -1293,7 +1316,7 @@ footer .container {
   margin-top: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer-box2 h3 {
     margin-top: 0;
     text-align: center;
@@ -1350,7 +1373,7 @@ footer .container {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer-box3 h3 {
     margin-top: 0;
     text-align: center;
@@ -1361,7 +1384,7 @@ footer .container {
   display: inline-flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer-box3 label {
     display: flex;
     flex-direction: column;
@@ -1382,13 +1405,13 @@ footer .container {
   padding-left: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .send-input-size {
     width: 450px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .send-input-size {
     margin-bottom: 20px;
   }

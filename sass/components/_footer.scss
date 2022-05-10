@@ -2,21 +2,44 @@ footer {
     
     background-color: $brand-color;
     padding: 60px 0 60px 0;
+    
 
     .container {
-        display: flex;
+        
+        justify-content: center;
+
+        div{
+        
+            @media screen and (min-width:768px){
+                
+                flex-basis: 50%;
+            }
+        }
+        
+        @media screen and(min-width:768px) {
+                display: flex;
+                @media screen and(max-width:1200px){
+                   flex-wrap: wrap; 
+                }
+                
+            }
         @media screen and(max-width:768px){
             flex-direction: column;
             align-items: center;
         }
+        
+        @media screen and (min-width:1200px){
+            display: inline-flex;
+        }
+        
     }
 }
 
 .footer-box1 {
     margin-right: 70px;
-    width: 231px;
+    
 
-    @media screen and(max-width:768px){
+    @media screen and(max-width:1200px){
         margin-right: 0;
         margin-bottom: 60px;
     }
@@ -25,7 +48,7 @@ footer {
 .footer-logo {
     margin-bottom: 20px;
 
-    @media screen and(max-width:768px){
+    @media screen and(max-width:1200px){
         display: flex;
         justify-content: center;
     }
@@ -53,7 +76,7 @@ footer {
 
 .footer-address{
     
-        @media screen and(max-width:768px){
+        @media screen and(max-width:1200px){
             
             text-align: center;
         }
@@ -101,7 +124,7 @@ footer {
 
 .footer-box2 {
     margin-right: 93px;
-    @media screen and(max-width:768px) {
+    @media screen and(max-width:1200px) {
             margin-right: 0;
             margin-bottom: 60px;
             
@@ -118,7 +141,7 @@ footer {
         margin-bottom: 20px;
         margin-top: 15px;
 
-        @media screen and(max-width:768px){
+        @media screen and(max-width:1200px){
             margin-top: 0;
             text-align: center;
         }
@@ -163,6 +186,7 @@ footer {
 .footer-box3 {
     display: inline-block;
     
+    
 
     h3 {
         font-style: normal;
@@ -175,7 +199,7 @@ footer {
         margin-top: 15px;
         margin-bottom: 20px;
 
-        @media screen and(max-width:768px){
+        @media screen and(max-width:1200px){
             margin-top: 0;
             text-align: center;
         }
@@ -183,7 +207,7 @@ footer {
 
     label{
         display: inline-flex;
-        @media screen and(max-width:768px){
+        @media screen and(max-width:1200px){
             display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -193,7 +217,7 @@ footer {
 
 .send-input-size {
     width: 358px;
-    @media screen and(max-width:768px){
+    @media screen and(max-width:1200px){
         width: 450px;
     }
     height: 50px;
@@ -206,7 +230,7 @@ footer {
     color: $background-color;
     padding-left: 16px;
 
-    @media screen and(max-width:768px){
+    @media screen and(max-width:1200px){
         margin-bottom: 20px;
     }
 }
