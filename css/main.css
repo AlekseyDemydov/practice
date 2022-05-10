@@ -50,24 +50,6 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 button {
   cursor: pointer;
   font-family: 'Roboto';
@@ -395,6 +377,7 @@ header .backdrop-menu.is-open {
 .box-section {
   display: flex;
   z-index: 80;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -402,6 +385,7 @@ header .backdrop-menu.is-open {
 @media screen and (max-width: 768px) {
   .box-section {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Header480.jpg);
+    padding: 0;
   }
 }
 
@@ -719,5 +703,203 @@ header .backdrop-menu.is-open {
   color: #2196F3;
   border-bottom: 1px solid #2196F3;
   margin-left: 2pt;
+}
+
+.benefits-section {
+  padding: 94px 0 94px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-section .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .benefits-section {
+    padding: 60px 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-section li:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media scren and (min-width: 480px) {
+  .benefits-section div {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-section div {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-section div {
+    width: 270px;
+  }
+}
+
+.benefits-section ul {
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-section ul {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .benefits-section ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-section li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.benefits-section__antenna, .benefits-section__clock, .benefits-section__diagram, .benefits-section__astronaut {
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-section__antenna, .benefits-section__clock, .benefits-section__diagram, .benefits-section__astronaut {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-section__antenna, .benefits-section__clock, .benefits-section__diagram, .benefits-section__astronaut {
+    width: 270px;
+  }
+}
+
+.benefits-section__antenna:nth-child(1) {
+  background-image: url(../images/main/icon/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-section__clock:nth-child(1) {
+  background-image: url(../images/main/icon/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-section__diagram:nth-child(1) {
+  background-image: url(../images/main/icon/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-section__astronaut:nth-child(1) {
+  background-image: url(../images/main/icon/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-section__name {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-section__name {
+    text-align: center;
+  }
+}
+
+.benefits-section__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-section__text {
+    margin: 0 0 30px 0;
+  }
+}
+
+.work-section {
+  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .work-section {
+    display: none;
+  }
+}
+
+.work-section h2 {
+  position: relative;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.work-section__article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-section article {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.work-section__text {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,55 +1,79 @@
 .benefits-section {
     padding: 94px 0 94px 0;
 
-    @media screen and (max-width:768px) {
-            width: 480px;
+    .container{
+        @media screen and (min-width:768px){
+            width: 768px;
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+            
             padding: 60px 0;
+            margin: 0 auto;
         }
     
-        @media screen and (max-width:1200px) {
-            width: 768px;
-            padding: 60px 0;
+    @media screen and(min-width:768px){
+        li:nth-child(2n+1){
+            margin-right: 30px;
         }
+    }   
 
     div{
         @media scren and(min-width: 480px){
             width: 450px;
         }
+            @media screen and (min-width:768px) {
+                 width: 354px;
+                }
+
+                @media screen and (min-width:1200px){
+                    width: 270px;
+                }
     }
     
     ul {
-        @media screen and(min-width:768px){
+        @media screen and (min-width:1200px){
             display: flex;
+            
+        }
+        @media screen and(max-width:1200px){
+            display: flex;
+            flex-wrap: wrap;
+            
+            
         }
         
         justify-content: center;
 
     }
 
-    li {
-        margin: 0 15px;
-        @media screen and (max-width:768px) {
-                margin: 0;
-            }
-    }
+    li:not(:last-child) {
+        @media screen and (min-width:1200px){
+            margin-right: 30px;
+        }
+    
+        
+}
 
     &__antenna,
     &__clock,
     &__diagram,
     &__astronaut {
         height: 120px;
-        width: 270px;
+        
         background: $btn-color2;
         border-radius: 4px;
         align-items: center;
         margin-bottom: 30px;
-        @media screen and (max-width:768px){
-            width: 450px;
-                height: 120px;
-        }
-        @media screen and (max-width:1200px){
-            width: 354px;
-            height: 120px;
+        
+        @media screen and (min-width:768px) {
+            flex-basis: 50%;
+        
+            }
+
+        @media screen and (min-width:1200px){
+            width: 270px;
         }
     }
 
