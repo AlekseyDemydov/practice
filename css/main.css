@@ -371,6 +371,19 @@ header .backdrop-menu.is-open {
 .header-link {
   display: inline-flex;
   margin-bottom: 48px;
+  font-style: normal;
+}
+
+.header-link a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.header-link span {
+  margin: 0 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -388,13 +401,13 @@ header .backdrop-menu.is-open {
 
 @media screen and (max-width: 768px) {
   .box-section {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Header480.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .box-section {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header-768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Header-768.jpg);
   }
 }
 

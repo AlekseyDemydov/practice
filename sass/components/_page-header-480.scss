@@ -276,6 +276,18 @@ header {
 .header-link {
     display: inline-flex;
     margin-bottom: 48px;
+    font-style: normal;
+    a{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: $button-color;
+    }
+    span{
+        margin: 0 10px;
+    }
+    
     @media screen and(min-width:768px){
         display: none;
     }
