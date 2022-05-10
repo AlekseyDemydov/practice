@@ -382,20 +382,25 @@ header .backdrop-menu.is-open {
 .box-section {
   display: flex;
   z-index: 80;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/background-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .box-section {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header480.jpg);
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .box-section {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header-768.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/background-bg.jpg);
   }
 }
 
