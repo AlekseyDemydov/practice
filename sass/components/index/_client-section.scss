@@ -11,6 +11,10 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
+        @media screen and(max-width:1200px){
+            font-size: 28px;
+                line-height: 33px;
+        }
         text-align: center;
         letter-spacing: 0.03em;
         color: $text-color;
@@ -80,6 +84,9 @@
         justify-content: center;
         fill: #AFB1B8;
         width: 170px;
+        @media screen and(max-width:768px){
+            width: 210px;
+        }
         height: 92px;
         border: 1px solid #AFB1B8;
         box-sizing: border-box;

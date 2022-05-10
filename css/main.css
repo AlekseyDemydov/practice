@@ -1078,6 +1078,13 @@ header .backdrop-menu.is-open {
 
 @media screen and (max-width: 1200px) {
   .client-section h2 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .client-section h2 {
     margin-bottom: 30px;
   }
 }
@@ -1142,6 +1149,12 @@ header .backdrop-menu.is-open {
   box-sizing: border-box;
   border-radius: 4px;
   transition: border-color 250ms linear, fill 250ms linear;
+}
+
+@media screen and (max-width: 768px) {
+  .client-card__icon-size {
+    width: 210px;
+  }
 }
 
 .client-card__icon-size:hover, .client-card__icon-size:focus {
