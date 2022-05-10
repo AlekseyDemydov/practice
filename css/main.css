@@ -386,7 +386,7 @@ header .backdrop-menu.is-open {
   background-position: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .box-section {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main/Header480.jpg);
   }
