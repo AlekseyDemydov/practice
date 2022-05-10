@@ -103,6 +103,11 @@
         letter-spacing: 0.06em;
         color: $background-color;
         margin-bottom: 40px;
+        transition: background-color 250ms linear;
+
+        &:hover, &:focus{
+            background-color: #188CE8;
+        }
     }
 }
 
@@ -234,7 +239,7 @@
 
     &__treaty {
         color: $button-color;
-        text-decoration: underline;
+        border-bottom: 1px solid $button-color;
         margin-left: 2pt;
     }
 }
