@@ -50,10 +50,6 @@ body {
   }
 }
 
-.container {
-  position: relative;
-}
-
 @media screen and (max-width: 480px) {
   .container {
     width: 480px;
@@ -341,7 +337,6 @@ header .backdrop-menu.is-open {
 .menu-button {
   display: inline-flex;
   position: absolute;
-  top: 0;
   right: 0;
   z-index: 91;
   background-color: #ffffff;
