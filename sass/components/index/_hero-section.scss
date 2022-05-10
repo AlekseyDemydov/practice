@@ -1,25 +1,27 @@
 .box-section {
-    display:flex;
+    display: flex;
     z-index: 80;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
-    
-    
-@media screen and(max-width:768px){
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Header480.jpg);
-     padding: 0;
-}
-@media screen and(min-width:768px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Header-768.jpg);
-    
-}
-@media screen and(min-width:1200px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/background-bg.jpg);
 
-}
-    
-    
+
+    @media screen and(max-width:768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Header480.jpg);
+        padding: 0;
+    }
+
+    @media screen and(min-width:768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/Header-768.jpg);
+
+    }
+
+    @media screen and(min-width:1200px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/background-bg.jpg);
+
+    }
+
+
 
     .container {
         padding: 200px 0 200px 0;
@@ -28,16 +30,16 @@
         align-items: center;
 
         @media screen and (max-width:1200px) {
-        
-                padding: 118px 0 118px 0;
-            }
+
+            padding: 118px 0 118px 0;
+        }
     }
 
     &__text {
         font-family: 'Roboto';
         font-style: normal;
         width: 696px;
-        height: 120px;
+
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -47,16 +49,16 @@
         margin: 0;
         color: $background-color;
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:1200px) {
             width: 360px;
-                font-size: 26px;
+            font-size: 26px;
             line-height: 42px;
-            
-                
-            }
 
-            
-        
+
+        }
+
+
+
     }
 
     &__button {
@@ -77,4 +79,3 @@
         color: $background-color;
     }
 }
-

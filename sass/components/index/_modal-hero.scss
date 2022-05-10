@@ -1,6 +1,3 @@
-
-
-
 .backdrop {
     margin: 0 auto;
     z-index: 100;
@@ -17,7 +14,7 @@
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    
+
 }
 
 .modal {
@@ -33,9 +30,9 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:1200px) {
         width: 450px;
-        
+
     }
 
     &__close-button {
@@ -46,7 +43,8 @@
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: $background-color;
-        @media screen and (max-width:1200px){
+
+        @media screen and (max-width:1200px) {
             margin-left: 412px;
         }
 
@@ -84,7 +82,8 @@
         text-align: center;
         color: $text-color;
         margin-bottom: 30px;
-        @media screen and (max-width:1200px){
+
+        @media screen and (max-width:1200px) {
             margin-bottom: 12px;
         }
     }
@@ -105,7 +104,8 @@
         margin-bottom: 40px;
         transition: background-color 250ms linear;
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             background-color: #188CE8;
         }
     }
@@ -148,7 +148,8 @@
         border-radius: 4px;
         transition: border-color 250ms linear;
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             border-color: $button-color;
         }
 
@@ -177,8 +178,8 @@
         transition: border-color 250ms linear;
 
         &:hover {
-                border-color: $button-color;
-            }
+            border-color: $button-color;
+        }
     }
 
     &::placeholder {
@@ -207,11 +208,11 @@
         letter-spacing: 0.03em;
         color: $second-text;
 
-        @media screen and (max-width:1200px){
+        @media screen and (max-width:1200px) {
             font-size: 12px;
-                line-height: 14px;
+            line-height: 14px;
         }
-        }
+    }
 
     &__checkbox {
         display: inline-block;

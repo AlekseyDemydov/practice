@@ -154,11 +154,16 @@ header .backdrop-menu.is-open {
 .header-nav {
   z-index: 86;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -229,14 +234,31 @@ header .backdrop-menu.is-open {
 .header-info {
   z-index: 86;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 500;
+  align-items: baseline;
+}
+
+.header-info a {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .header-info {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-info {
+    display: flex;
+    font-size: 14px;
+    line-height: 16px;
     margin-left: auto;
   }
 }
@@ -274,6 +296,14 @@ header .backdrop-menu.is-open {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .header-info__icon-smartphone {
+    width: 10px;
+    height: 14px;
+    margin-right: 0;
+  }
+}
+
 .header-info__mail {
   fill: #757575;
   color: #757575;
@@ -299,15 +329,16 @@ header .backdrop-menu.is-open {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .header-info__icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .header-info__mail:hover, .header-info__mail:focus, .header-info__tel:hover, .header-info__tel:focus {
   color: #2196F3;
   fill: #2196F3;
-}
-
-@media screen and (min-width: 1200px) {
-  .header-info {
-    display: flex;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -418,7 +449,6 @@ header .backdrop-menu.is-open {
   font-family: 'Roboto';
   font-style: normal;
   width: 696px;
-  height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -429,7 +459,7 @@ header .backdrop-menu.is-open {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .box-section__text {
     width: 360px;
     font-size: 26px;
